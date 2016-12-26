@@ -335,4 +335,4 @@ QVariantMap SqlModel::get(int index) const
     return ret;
 }
 
-#include "sqlmodel.moc"
+#include "release/sqlmodel.moc"

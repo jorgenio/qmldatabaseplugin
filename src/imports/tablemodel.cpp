@@ -409,9 +409,9 @@ QVariant TableModel::insert(const QVariantMap &data)
         QString condition;
         QVariantList params;
         if (db.driverName() == QLatin1String("QPSQL")) {
-            condition = QLatin1String("oid=?");
+    /**        condition = QLatin1String("oid=?");
             params.append(query.lastInsertId().toInt());
-        } else {
+        } else { **/
             condition = QString("%1=?").arg(m_primaryKey);
             params.append(query.lastInsertId().toInt());
         }
